@@ -87,7 +87,7 @@ void can_init_freq (can_t *obj, PinName rd, PinName td, int hz)
     /*  Use default values for rist init */
     obj->CanHandle.Instance = (CAN_TypeDef *)can;
     obj->CanHandle.Init.TTCM = DISABLE;
-    obj->CanHandle.Init.ABOM = DISABLE;
+    obj->CanHandle.Init.ABOM = ENABLE;
     obj->CanHandle.Init.AWUM = DISABLE;
     obj->CanHandle.Init.NART = DISABLE;
     obj->CanHandle.Init.RFLM = DISABLE;
